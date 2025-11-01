@@ -1,0 +1,431 @@
+type linearity_trusted_app domain;
+typeattribute linearity_trusted_app appdomain;
+type_transition linearity_trusted_app simpleperf_exec process simpleperf
+type_transition linearity_trusted_app simpleperf_exec process simpleperf
+allow linearity_trusted_app hidl_memory_hwservice hwservice_manager { find }
+allow linearity_trusted_app hidl_memory_hwservice hwservice_manager { find }
+allow linearity_trusted_app tmpfs dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app tmpfs dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app ion_device chr_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app ion_device chr_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app pdx_display_manager_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app pdx_display_manager_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app pdx_bufferhub_client_server_type fd { use }
+allow linearity_trusted_app pdx_bufferhub_client_server_type fd { use }
+allowxperm linearity_trusted_app privapp_data_file file ioctl { 0x6686 }
+allowxperm linearity_trusted_app privapp_data_file file ioctl { 0x6686 }
+allow linearity_trusted_app vendor_microdroid_file file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_microdroid_file file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app hal_graphics_mapper_service service_manager { find }
+allow linearity_trusted_app hal_graphics_mapper_service service_manager { find }
+allow linearity_trusted_app vendor_seemp_data_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app vendor_seemp_data_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app pdx_display_vsync_endpoint_dir_type dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app pdx_display_vsync_endpoint_dir_type dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app hal_drm_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_drm_hwservice hwservice_manager { find }
+allow linearity_trusted_app vendor_app_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app vendor_app_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app untrusted_app file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app untrusted_app file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app codec2_config_prop file { read getattr map open }
+allow linearity_trusted_app codec2_config_prop file { read getattr map open }
+allow linearity_trusted_app textclassifier_data_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app textclassifier_data_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app sysfs_gpu file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app sysfs_gpu file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app pdx_performance_client_endpoint_socket_type unix_stream_socket { read write shutdown connectto }
+allow linearity_trusted_app pdx_performance_client_endpoint_socket_type unix_stream_socket { read write shutdown connectto }
+allow linearity_trusted_app hal_drm_service service_manager { find }
+allow linearity_trusted_app hal_drm_service service_manager { find }
+allow linearity_trusted_app logd unix_stream_socket { connectto }
+allow linearity_trusted_app logd unix_stream_socket { connectto }
+allow linearity_trusted_app hal_omx_server binder { call transfer }
+allow linearity_trusted_app hal_omx_server binder { call transfer }
+allow linearity_trusted_app hal_cas_service service_manager { find }
+allow linearity_trusted_app hal_cas_service service_manager { find }
+allow linearity_trusted_app hal_omx_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_omx_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_codec2_server binder { call transfer }
+allow linearity_trusted_app hal_codec2_server binder { call transfer }
+allow linearity_trusted_app hal_graphics_mapper_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_graphics_mapper_hwservice hwservice_manager { find }
+allow linearity_trusted_app storage_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app storage_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app port_type udp_socket { name_bind }
+allow linearity_trusted_app port_type udp_socket { name_bind }
+allow linearity_trusted_app hal_drm_server binder { call transfer }
+allow linearity_trusted_app hal_drm_server binder { call transfer }
+allow linearity_trusted_app untrusted_app lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app untrusted_app lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app pdx_performance_client_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app pdx_performance_client_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app pdx_display_client_server_type fd { use }
+allow linearity_trusted_app pdx_display_client_server_type fd { use }
+allow linearity_trusted_app simpleperf_exec file { read getattr map execute open }
+allow linearity_trusted_app simpleperf_exec file { read getattr map execute open }
+allow linearity_trusted_app credstore_service service_manager { find }
+allow linearity_trusted_app credstore_service service_manager { find }
+allow linearity_trusted_app storage_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app storage_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+dontaudit linearity_trusted_app vendor_sysfs_kgsl dir { read }
+dontaudit linearity_trusted_app vendor_sysfs_kgsl dir { read }
+allow linearity_trusted_app vendor_seemp_data_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_seemp_data_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app hal_allocator_server fd { use }
+allow linearity_trusted_app hal_allocator_server fd { use }
+allow linearity_trusted_app servicemanager binder { call transfer }
+allow linearity_trusted_app servicemanager binder { call transfer }
+dontaudit linearity_trusted_app simpleperf process { noatsecure }
+dontaudit linearity_trusted_app simpleperf process { noatsecure }
+allow linearity_trusted_app credstore fd { use }
+allow linearity_trusted_app credstore fd { use }
+allow linearity_trusted_app vendor_dpmtcm_socket sock_file { write lock append map open }
+allow linearity_trusted_app vendor_dpmtcm_socket sock_file { write lock append map open }
+allow linearity_trusted_app sdk_sandbox_data_file fd { use }
+allow linearity_trusted_app sdk_sandbox_data_file fd { use }
+allow linearity_trusted_app sdcard_type file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allow linearity_trusted_app sdcard_type file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allow linearity_trusted_app sdk_sandbox_data_file file { write }
+allow linearity_trusted_app sdk_sandbox_data_file file { write }
+allow linearity_trusted_app dmabuf_system_secure_heap_device chr_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app dmabuf_system_secure_heap_device chr_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_public file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_public file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app hal_configstore_server binder { call transfer }
+allow linearity_trusted_app hal_configstore_server binder { call transfer }
+allow linearity_trusted_app mnt_user_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app mnt_user_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app vendor_sysfs_kgsl dir { search }
+allow linearity_trusted_app vendor_sysfs_kgsl dir { search }
+allow linearity_trusted_app vendor_sysfs_kgsl_snapshot lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_kgsl_snapshot lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app crash_dump process { transition siginh rlimitinh }
+allow linearity_trusted_app crash_dump process { transition siginh rlimitinh }
+allow linearity_trusted_app textclassifier_data_file file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app textclassifier_data_file file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app port_type tcp_socket { name_bind }
+allow linearity_trusted_app port_type tcp_socket { name_bind }
+allow linearity_trusted_app hal_graphics_allocator_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_graphics_allocator_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_codec2_service service_manager { find }
+allow linearity_trusted_app hal_codec2_service service_manager { find }
+allow linearity_trusted_app hal_neuralnetworks_service service_manager { find }
+allow linearity_trusted_app hal_neuralnetworks_service service_manager { find }
+allow linearity_trusted_app untrusted_app_userfaultfd anon_inode { ioctl read create }
+allow linearity_trusted_app untrusted_app_userfaultfd anon_inode { ioctl read create }
+type linearity_trusted_app { domain appdomain untrusted_app_all netdomain bluetoothdomain coredomain vendor_hal_dspmanager_client vendor_hal_qspmhal_client vendor_hal_qesdhal_client vendor_hal_qvrservice_qti_socket_fd_use_client vendor_hal_sxrservice_qti_socket_fd_use_client }
+type linearity_trusted_app { domain appdomain untrusted_app_all netdomain bluetoothdomain coredomain vendor_hal_dspmanager_client vendor_hal_qspmhal_client vendor_hal_qesdhal_client vendor_hal_qvrservice_qti_socket_fd_use_client vendor_hal_sxrservice_qti_socket_fd_use_client }
+allow linearity_trusted_app privapp_data_file dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app privapp_data_file dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app hal_codec2_server fd { use }
+allow linearity_trusted_app hal_codec2_server fd { use }
+allowxperm linearity_trusted_app untrusted_app tcp_socket ioctl { 0x8B01 0x8B05 0x8B07 0x8B09 0x8B0B 0x8B0D 0x8B0F 0x8B11-0x8B13 0x8B21 0x8B23 0x8B25 0x8B27 0x8B29 0x8B2D }
+allowxperm linearity_trusted_app untrusted_app tcp_socket ioctl { 0x8B01 0x8B05 0x8B07 0x8B09 0x8B0B 0x8B0D 0x8B0F 0x8B11-0x8B13 0x8B21 0x8B23 0x8B25 0x8B27 0x8B29 0x8B2D }
+allow linearity_trusted_app usb_device chr_file { ioctl read write getattr }
+allow linearity_trusted_app usb_device chr_file { ioctl read write getattr }
+allow linearity_trusted_app vendor_public_adsprpcd_file file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_public_adsprpcd_file file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app rootfs lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app rootfs lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app tun_device chr_file { ioctl read write getattr append }
+allow linearity_trusted_app tun_device chr_file { ioctl read write getattr append }
+allow linearity_trusted_app crash_dump_exec file { read getattr map execute open }
+allow linearity_trusted_app crash_dump_exec file { read getattr map execute open }
+allow linearity_trusted_app hidl_token_hwservice hwservice_manager { find }
+allow linearity_trusted_app hidl_token_hwservice hwservice_manager { find }
+type_transition linearity_trusted_app untrusted_app anon_inode untrusted_app_userfaultfd [userfaultfd]
+type_transition linearity_trusted_app untrusted_app anon_inode untrusted_app_userfaultfd [userfaultfd]
+allow linearity_trusted_app pdx_bufferhub_client_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app pdx_bufferhub_client_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app legacykeystore_service service_manager { find }
+allow linearity_trusted_app legacykeystore_service service_manager { find }
+allow linearity_trusted_app vendor_gles_data_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_gles_data_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app media_rw_data_file dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app media_rw_data_file dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app vendor_sysfs_gpu_max_clock file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_gpu_max_clock file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app sdcard_type dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app sdcard_type dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app keystore_service service_manager { find }
+allow linearity_trusted_app keystore_service service_manager { find }
+allow linearity_trusted_app gpuservice fd { use }
+allow linearity_trusted_app gpuservice fd { use }
+allow linearity_trusted_app toolbox_exec file { ioctl read getattr lock map execute open watch watch_reads execute_no_trans }
+allow linearity_trusted_app toolbox_exec file { ioctl read getattr lock map execute open watch watch_reads execute_no_trans }
+type_transition linearity_trusted_app tmpfs file appdomain_tmpfs
+type_transition linearity_trusted_app tmpfs file appdomain_tmpfs
+allow linearity_trusted_app vendor_sysfs_kgsl_gpu_model file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_kgsl_gpu_model file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app pdx_display_vsync_endpoint_socket_type sock_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app pdx_display_vsync_endpoint_socket_type sock_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app media_rw_data_file file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allow linearity_trusted_app media_rw_data_file file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allow linearity_trusted_app vendor_seemp_data_file file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app vendor_seemp_data_file file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app privapp_data_file file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allow linearity_trusted_app privapp_data_file file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allowxperm linearity_trusted_app untrusted_app udp_socket ioctl { 0x5401-0x5404 0x540B 0x540E-0x5411 0x5413-0x5414 0x5450-0x5451 }
+allowxperm linearity_trusted_app untrusted_app udp_socket ioctl { 0x5401-0x5404 0x540B 0x540E-0x5411 0x5413-0x5414 0x5450-0x5451 }
+allow linearity_trusted_app hal_audio_default fd { use }
+allow linearity_trusted_app hal_audio_default fd { use }
+allow linearity_trusted_app su binder { call transfer }
+allow linearity_trusted_app su binder { call transfer }
+allow linearity_trusted_app hidl_manager_hwservice hwservice_manager { find }
+allow linearity_trusted_app hidl_manager_hwservice hwservice_manager { find }
+allow linearity_trusted_app pdx_display_manager_endpoint_socket_type unix_stream_socket { read write shutdown connectto }
+allow linearity_trusted_app pdx_display_manager_endpoint_socket_type unix_stream_socket { read write shutdown connectto }
+allow linearity_trusted_app untrusted_app fd { use }
+allow linearity_trusted_app untrusted_app fd { use }
+allow linearity_trusted_app untrusted_app icmp_socket { ioctl read write create getattr setattr lock append map bind connect getopt setopt shutdown }
+allow linearity_trusted_app untrusted_app icmp_socket { ioctl read write create getattr setattr lock append map bind connect getopt setopt shutdown }
+allow linearity_trusted_app shell_exec file { ioctl read getattr lock map execute open watch watch_reads execute_no_trans }
+allow linearity_trusted_app shell_exec file { ioctl read getattr lock map execute open watch watch_reads execute_no_trans }
+allow linearity_trusted_app nnapi_ext_deny_product_prop file { read getattr map open }
+allow linearity_trusted_app nnapi_ext_deny_product_prop file { read getattr map open }
+allowxperm linearity_trusted_app untrusted_app udp_socket ioctl { 0x8B01 0x8B05 0x8B07 0x8B09 0x8B0B 0x8B0D 0x8B0F 0x8B11-0x8B13 0x8B21 0x8B23 0x8B25 0x8B27 0x8B29 0x8B2D }
+allowxperm linearity_trusted_app untrusted_app udp_socket ioctl { 0x8B01 0x8B05 0x8B07 0x8B09 0x8B0B 0x8B0D 0x8B0F 0x8B11-0x8B13 0x8B21 0x8B23 0x8B25 0x8B27 0x8B29 0x8B2D }
+allow linearity_trusted_app logd_socket sock_file { write }
+allow linearity_trusted_app logd_socket sock_file { write }
+allow linearity_trusted_app vendor_gles_data_file dir { ioctl read write getattr lock open watch watch_reads add_name remove_name search }
+allow linearity_trusted_app vendor_gles_data_file dir { ioctl read write getattr lock open watch watch_reads add_name remove_name search }
+allow linearity_trusted_app keystore keystore2_key { delete get_info rebind update use }
+allow linearity_trusted_app keystore keystore2_key { delete get_info rebind update use }
+type_transition linearity_trusted_app rs_exec process rs
+type_transition linearity_trusted_app rs_exec process rs
+allow linearity_trusted_app hwbinder_device chr_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app hwbinder_device chr_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app pdx_performance_client_endpoint_dir_type dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app pdx_performance_client_endpoint_dir_type dir { ioctl read getattr lock open watch watch_reads search }
+allowxperm linearity_trusted_app untrusted_app rawip_socket ioctl { 0x8906-0x8907 0x8910 0x8912-0x8913 0x8915 0x8917 0x8919 0x891B 0x8921 0x8933 0x8938 0x8942 }
+allowxperm linearity_trusted_app untrusted_app rawip_socket ioctl { 0x8906-0x8907 0x8910 0x8912-0x8913 0x8915 0x8917 0x8919 0x891B 0x8921 0x8933 0x8938 0x8942 }
+allow linearity_trusted_app keystore fd { use }
+allow linearity_trusted_app keystore fd { use }
+type_transition linearity_trusted_app virtualizationmanager_exec process virtualizationmanager
+type_transition linearity_trusted_app virtualizationmanager_exec process virtualizationmanager
+allow linearity_trusted_app vendor_dpmd unix_stream_socket { connectto }
+allow linearity_trusted_app vendor_dpmd unix_stream_socket { connectto }
+allow linearity_trusted_app mnt_media_rw_file dir { search }
+allow linearity_trusted_app mnt_media_rw_file dir { search }
+allow linearity_trusted_app vendor_fingerprint_prop file { read getattr map open }
+allow linearity_trusted_app vendor_fingerprint_prop file { read getattr map open }
+allow linearity_trusted_app servicemanager_prop file { read getattr map open }
+allow linearity_trusted_app servicemanager_prop file { read getattr map open }
+allow linearity_trusted_app gpuservice binder { call transfer }
+allow linearity_trusted_app gpuservice binder { call transfer }
+allowxperm linearity_trusted_app untrusted_app tcp_socket ioctl { 0x8906-0x8907 0x8910 0x8912-0x8913 0x8915 0x8917 0x8919 0x891B 0x8921 0x8933 0x8938 0x8942 }
+allowxperm linearity_trusted_app untrusted_app tcp_socket ioctl { 0x8906-0x8907 0x8910 0x8912-0x8913 0x8915 0x8917 0x8919 0x891B 0x8921 0x8933 0x8938 0x8942 }
+allow linearity_trusted_app pdx_performance_client_endpoint_socket_type sock_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app pdx_performance_client_endpoint_socket_type sock_file { ioctl read write getattr lock append map open watch watch_reads }
+allowxperm linearity_trusted_app untrusted_app tcp_socket ioctl { 0x5401-0x5404 0x540B 0x540E-0x5411 0x5413-0x5414 0x5450-0x5451 }
+allowxperm linearity_trusted_app untrusted_app tcp_socket ioctl { 0x5401-0x5404 0x540B 0x540E-0x5411 0x5413-0x5414 0x5450-0x5451 }
+allow linearity_trusted_app node_type udp_socket { node_bind }
+allow linearity_trusted_app node_type udp_socket { node_bind }
+allow linearity_trusted_app heapprofd unix_stream_socket { connectto }
+allow linearity_trusted_app heapprofd unix_stream_socket { connectto }
+allow linearity_trusted_app untrusted_app fifo_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app untrusted_app fifo_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app untrusted_app rawip_socket { ioctl read write create getattr setattr lock append map bind connect getopt setopt shutdown }
+allow linearity_trusted_app untrusted_app rawip_socket { ioctl read write create getattr setattr lock append map bind connect getopt setopt shutdown }
+allow linearity_trusted_app hal_allocator_server binder { call transfer }
+allow linearity_trusted_app hal_allocator_server binder { call transfer }
+allow linearity_trusted_app hal_graphics_allocator_service service_manager { find }
+allow linearity_trusted_app hal_graphics_allocator_service service_manager { find }
+allow linearity_trusted_app hal_cas_server fd { use }
+allow linearity_trusted_app hal_cas_server fd { use }
+allow linearity_trusted_app hal_neuralnetworks_server binder { call transfer }
+allow linearity_trusted_app hal_neuralnetworks_server binder { call transfer }
+allow linearity_trusted_app hwservicemanager_prop file { read getattr map open }
+allow linearity_trusted_app hwservicemanager_prop file { read getattr map open }
+allow linearity_trusted_app sysfs_thermal dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app sysfs_thermal dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app untrusted_app tcp_socket { ioctl read write create getattr setattr lock append map bind connect listen accept getopt setopt shutdown }
+allow linearity_trusted_app untrusted_app tcp_socket { ioctl read write create getattr setattr lock append map bind connect listen accept getopt setopt shutdown }
+allow linearity_trusted_app vendor_gles_data_file file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app vendor_gles_data_file file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app pdx_display_vsync_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app pdx_display_vsync_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app servicemanager fd { use }
+allow linearity_trusted_app servicemanager fd { use }
+allow linearity_trusted_app pdx_display_vsync_endpoint_socket_type unix_stream_socket { read write shutdown connectto }
+allow linearity_trusted_app pdx_display_vsync_endpoint_socket_type unix_stream_socket { read write shutdown connectto }
+allow linearity_trusted_app device_config_nnapi_native_prop file { read getattr map open }
+allow linearity_trusted_app device_config_nnapi_native_prop file { read getattr map open }
+allow linearity_trusted_app hal_camera_default fd { use }
+allow linearity_trusted_app hal_camera_default fd { use }
+type_transition linearity_trusted_app crash_dump_exec process crash_dump
+type_transition linearity_trusted_app crash_dump_exec process crash_dump
+allow linearity_trusted_app hal_renderscript_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_renderscript_hwservice hwservice_manager { find }
+allow linearity_trusted_app pdx_display_client_endpoint_dir_type dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app pdx_display_client_endpoint_dir_type dir { ioctl read getattr lock open watch watch_reads search }
+dontaudit linearity_trusted_app crash_dump process { noatsecure }
+dontaudit linearity_trusted_app crash_dump process { noatsecure }
+allow linearity_trusted_app pdx_display_client_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app pdx_display_client_channel_socket_type unix_stream_socket { read write getattr setattr lock append getopt setopt shutdown }
+allow linearity_trusted_app vendor_sysfs_kgsl_snapshot dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app vendor_sysfs_kgsl_snapshot dir { ioctl read getattr lock open watch watch_reads search }
+allowxperm linearity_trusted_app untrusted_app udp_socket ioctl { 0x8906-0x8907 0x8910 0x8912-0x8913 0x8915 0x8917 0x8919 0x891B 0x8921 0x8933 0x8938 0x8942 }
+allowxperm linearity_trusted_app untrusted_app udp_socket ioctl { 0x8906-0x8907 0x8910 0x8912-0x8913 0x8915 0x8917 0x8919 0x891B 0x8921 0x8933 0x8938 0x8942 }
+allow linearity_trusted_app heapprofd fd { use }
+allow linearity_trusted_app heapprofd fd { use }
+allow linearity_trusted_app hidl_allocator_hwservice hwservice_manager { find }
+allow linearity_trusted_app hidl_allocator_hwservice hwservice_manager { find }
+allow linearity_trusted_app untrusted_app lockdown { integrity confidentiality }
+allow linearity_trusted_app untrusted_app lockdown { integrity confidentiality }
+allow linearity_trusted_app credstore binder { call transfer }
+allow linearity_trusted_app credstore binder { call transfer }
+allow linearity_trusted_app vendor_microdroid_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app vendor_microdroid_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app node_type icmp_socket { node_bind }
+allow linearity_trusted_app node_type icmp_socket { node_bind }
+allow linearity_trusted_app keystore binder { call transfer }
+allow linearity_trusted_app keystore binder { call transfer }
+allow linearity_trusted_app binder_device chr_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app binder_device chr_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app untrusted_app process { fork sigchld sigkill sigstop signull signal ptrace getsched setsched getsession getpgid setpgid getcap setcap getattr setrlimit execmem }
+allow linearity_trusted_app untrusted_app process { fork sigchld sigkill sigstop signull signal ptrace getsched setsched getsession getpgid setpgid getcap setcap getattr setrlimit execmem }
+allow linearity_trusted_app heapprofd_tmpfs file { read write getattr map }
+allow linearity_trusted_app heapprofd_tmpfs file { read write getattr map }
+allow linearity_trusted_app hal_cas_server binder { call transfer }
+allow linearity_trusted_app hal_cas_server binder { call transfer }
+allow linearity_trusted_app system_app_data_file file { read write getattr map }
+allow linearity_trusted_app system_app_data_file file { read write getattr map }
+allow linearity_trusted_app appdomain_tmpfs file { read write getattr map execute }
+allow linearity_trusted_app appdomain_tmpfs file { read write getattr map execute }
+allow linearity_trusted_app vendor_microdroid_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_microdroid_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app sysfs_thermal file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app sysfs_thermal file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_kgsl_max_gpuclk file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_kgsl_max_gpuclk file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app untrusted_app unix_dgram_socket { ioctl read write create getattr setattr lock append map bind connect getopt setopt shutdown sendto }
+allow linearity_trusted_app untrusted_app unix_dgram_socket { ioctl read write create getattr setattr lock append map bind connect getopt setopt shutdown sendto }
+allow linearity_trusted_app pdx_performance_client_server_type fd { use }
+allow linearity_trusted_app pdx_performance_client_server_type fd { use }
+allow linearity_trusted_app hal_graphics_allocator_server binder { call transfer }
+allow linearity_trusted_app hal_graphics_allocator_server binder { call transfer }
+allow linearity_trusted_app qti-testscripts unix_stream_socket { read write getattr getopt shutdown }
+allow linearity_trusted_app qti-testscripts unix_stream_socket { read write getattr getopt shutdown }
+allow linearity_trusted_app pdx_display_client_endpoint_socket_type unix_stream_socket { read write shutdown connectto }
+allow linearity_trusted_app pdx_display_client_endpoint_socket_type unix_stream_socket { read write shutdown connectto }
+allow linearity_trusted_app media_variant_prop file { read getattr map open }
+allow linearity_trusted_app media_variant_prop file { read getattr map open }
+allow linearity_trusted_app fuse file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allow linearity_trusted_app fuse file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allow linearity_trusted_app hal_neuralnetworks_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_neuralnetworks_hwservice hwservice_manager { find }
+allowxperm linearity_trusted_app untrusted_app rawip_socket ioctl { 0x8B01 0x8B05 0x8B07 0x8B09 0x8B0B 0x8B0D 0x8B0F 0x8B11-0x8B13 0x8B21 0x8B23 0x8B25 0x8B27 0x8B29 0x8B2D }
+allowxperm linearity_trusted_app untrusted_app rawip_socket ioctl { 0x8B01 0x8B05 0x8B07 0x8B09 0x8B0B 0x8B0D 0x8B0F 0x8B11-0x8B13 0x8B21 0x8B23 0x8B25 0x8B27 0x8B29 0x8B2D }
+allow linearity_trusted_app hal_tv_tuner_server fd { use }
+allow linearity_trusted_app hal_tv_tuner_server fd { use }
+allow linearity_trusted_app vendor_sysfs_public lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_public lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_kgsl_gpubusy file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_kgsl_gpubusy file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app hal_graphics_allocator_server fd { use }
+allow linearity_trusted_app hal_graphics_allocator_server fd { use }
+allow linearity_trusted_app vendor_app_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_app_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app pdx_display_manager_endpoint_socket_type sock_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app pdx_display_manager_endpoint_socket_type sock_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app node_type tcp_socket { node_bind }
+allow linearity_trusted_app node_type tcp_socket { node_bind }
+allow linearity_trusted_app hal_neuralnetworks_server fd { use }
+allow linearity_trusted_app hal_neuralnetworks_server fd { use }
+allow linearity_trusted_app hal_configstore_server fd { use }
+allow linearity_trusted_app hal_configstore_server fd { use }
+allow linearity_trusted_app pdx_display_client_endpoint_socket_type sock_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app pdx_display_client_endpoint_socket_type sock_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app vendor_xdsp_device chr_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_xdsp_device chr_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app heapprofd_socket sock_file { write }
+allow linearity_trusted_app heapprofd_socket sock_file { write }
+allow linearity_trusted_app traced_perf unix_stream_socket { connectto }
+allow linearity_trusted_app traced_perf unix_stream_socket { connectto }
+allow linearity_trusted_app gpu_device chr_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app gpu_device chr_file { ioctl read write getattr lock append map open watch watch_reads }
+allow linearity_trusted_app same_process_hal_file file { read getattr map execute open }
+allow linearity_trusted_app same_process_hal_file file { read getattr map execute open }
+allow linearity_trusted_app pdx_display_manager_endpoint_dir_type dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app pdx_display_manager_endpoint_dir_type dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app vendor_sysfs_kgsl_snapshot file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_sysfs_kgsl_snapshot file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor_file dir { read open }
+allow linearity_trusted_app vendor_file dir { read open }
+allow linearity_trusted_app gpu_device dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app gpu_device dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app node_type rawip_socket { node_bind }
+allow linearity_trusted_app node_type rawip_socket { node_bind }
+allow linearity_trusted_app fuse dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app fuse dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app sysfs_thermal lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app sysfs_thermal lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app vendor-qti-testscripts unix_stream_socket { read write getattr getopt shutdown }
+allow linearity_trusted_app vendor-qti-testscripts unix_stream_socket { read write getattr getopt shutdown }
+allow linearity_trusted_app hal_codec2_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_codec2_hwservice hwservice_manager { find }
+allowxperm linearity_trusted_app app_data_file file ioctl { 0x6686 }
+allowxperm linearity_trusted_app app_data_file file ioctl { 0x6686 }
+allow linearity_trusted_app vendor_app_file file { ioctl read getattr lock map execute open watch watch_reads }
+allow linearity_trusted_app vendor_app_file file { ioctl read getattr lock map execute open watch watch_reads }
+allow linearity_trusted_app app_data_file dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app app_data_file dir { ioctl read write create getattr setattr lock rename open watch watch_reads add_name remove_name reparent search rmdir }
+allow linearity_trusted_app untrusted_app unix_stream_socket { ioctl read write create getattr setattr lock append map bind connect listen accept getopt setopt shutdown connectto }
+allow linearity_trusted_app untrusted_app unix_stream_socket { ioctl read write create getattr setattr lock append map bind connect listen accept getopt setopt shutdown connectto }
+allow linearity_trusted_app untrusted_app netlink_route_socket { read write create getattr setattr lock append connect getopt setopt shutdown nlmsg_read }
+allow linearity_trusted_app untrusted_app netlink_route_socket { read write create getattr setattr lock append connect getopt setopt shutdown nlmsg_read }
+allow linearity_trusted_app hal_omx_server fd { use }
+allow linearity_trusted_app hal_omx_server fd { use }
+allow linearity_trusted_app simpleperf process { transition siginh rlimitinh }
+allow linearity_trusted_app simpleperf process { transition siginh rlimitinh }
+allow linearity_trusted_app vendor_sysfs_public dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app vendor_sysfs_public dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app hal_cas_hwservice hwservice_manager { find }
+allow linearity_trusted_app hal_cas_hwservice hwservice_manager { find }
+allow linearity_trusted_app untrusted_app dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app untrusted_app dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app hal_drm_server fd { use }
+allow linearity_trusted_app hal_drm_server fd { use }
+allow linearity_trusted_app textclassifier_data_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app textclassifier_data_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app radio_data_file file { read write getattr }
+allow linearity_trusted_app radio_data_file file { read write getattr }
+allow linearity_trusted_app dmabuf_system_heap_device chr_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app dmabuf_system_heap_device chr_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app traced_perf_socket sock_file { write }
+allow linearity_trusted_app traced_perf_socket sock_file { write }
+allow linearity_trusted_app apc_service service_manager { find }
+allow linearity_trusted_app apc_service service_manager { find }
+allowxperm linearity_trusted_app tun_device chr_file ioctl { 0x54D2 }
+allowxperm linearity_trusted_app tun_device chr_file ioctl { 0x54D2 }
+allow linearity_trusted_app pdx_display_manager_server_type fd { use }
+allow linearity_trusted_app pdx_display_manager_server_type fd { use }
+allow linearity_trusted_app usbaccessory_device chr_file { read write getattr }
+allow linearity_trusted_app usbaccessory_device chr_file { read write getattr }
+allow linearity_trusted_app mnt_user_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app mnt_user_file lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app adsprpcd_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app adsprpcd_file dir { ioctl read getattr lock open watch watch_reads search }
+allow linearity_trusted_app hal_configstore_ISurfaceFlingerConfigs hwservice_manager { find }
+allow linearity_trusted_app hal_configstore_ISurfaceFlingerConfigs hwservice_manager { find }
+type_transition linearity_trusted_app devpts chr_file untrusted_app_all_devpts
+type_transition linearity_trusted_app devpts chr_file untrusted_app_all_devpts
+allow linearity_trusted_app pdx_display_vsync_server_type fd { use }
+allow linearity_trusted_app pdx_display_vsync_server_type fd { use }
+allow linearity_trusted_app vendor_tee_listener_prop file { read getattr map open }
+allow linearity_trusted_app vendor_tee_listener_prop file { read getattr map open }
+allow linearity_trusted_app keystore_maintenance_service service_manager { find }
+allow linearity_trusted_app keystore_maintenance_service service_manager { find }
+allow linearity_trusted_app app_data_file file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allow linearity_trusted_app app_data_file file { ioctl read write create getattr setattr lock append map unlink rename open watch watch_reads }
+allowxperm linearity_trusted_app untrusted_app rawip_socket ioctl { 0x5401-0x5404 0x540B 0x540E-0x5411 0x5413-0x5414 0x5450-0x5451 }
+allowxperm linearity_trusted_app untrusted_app rawip_socket ioctl { 0x5401-0x5404 0x540B 0x540E-0x5411 0x5413-0x5414 0x5450-0x5451 }
+allow linearity_trusted_app untrusted_app udp_socket { ioctl read write create getattr setattr lock append map bind connect getopt setopt shutdown }
+allow linearity_trusted_app untrusted_app udp_socket { ioctl read write create getattr setattr lock append map bind connect getopt setopt shutdown }
+allow linearity_trusted_app tmpfs lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app tmpfs lnk_file { ioctl read getattr lock map open watch watch_reads }
+allow linearity_trusted_app hwservicemanager binder { call transfer }
+allow linearity_trusted_app hwservicemanager binder { call transfer }
+deny { } { recovery_usb_config_prop mediaserver vendor_time_data_file odsign_metrics_file usb_control_prop proc_sched debugfs_trace_marker vendor_persist_rcs_qti_prop proc_pressure_mem logd_prop packagemanager_config_prop vendor_dataqdp_prop setupwizard_mode_prop vendor_location mtp_device swap_block_device vendor_proc_wifi_dbg vendor_proc_audiod vendor_hvdcp vendor_sysfs_usb_device localization_prop overlay_prop vendor_ctl_vendor_rmt_storage_prop usermodehelper vendor_sysfs_devfreq vendor_qwesd_socket sysfs_rtc vendor_audio_prop mediacodec userspace_reboot_test_prop vendor_rfs_access_exec vendor_slm_prop vendor_wifihal_socket zram_config_prop keystore_service seapp_contexts_file sysfs_dm mediaprovider_app vendor_bt_data_file vendor_sysfs_boot_adsp vendor_wfd_service_prop telephony_config_prop threadnetwork_config_prop vendor_bluetooth_prop shared_relro_file vendor_afp_prop vendor_crash_detect_prop vendor_sensors_vendor_data_file apex_art_data_file vendor_sysfs_rmnet vendor_vppservice_exec persist_vendor_debug_wifi_prop radio_cdma_ecm_prop usb_device proc_uid_concurrent_active_time proc_bpf adbd_config_prop sysfs_devices_system_cpu proc_panic vendor_feature_enabler_client vendor_persist_data_file vendor_persist_audio_file vendor_skp_device mediaswcodec_exec module_sdkextensions_prop vendor_hal_alarm_qti_default_exec ptmx_device vendor_bootreceiver_prop zygote_exec vendor_hal_keymaster_qti_exec vendor_sensors_prop simpleperf_exec aconfig_storage_metadata_file zygote_wrap_prop vold vendor_configs_file vendor_mdtp_device system_linker_exec suspend_debug_prop ota_metadata_file webview_zygote vendor_deviceid_prop serialno_prop vts_config_prop timezone_prop traced_oome_heap_session_count_prop owntty_device vendor_sp_ssr_device magisk_file ab_update_gki_prop vendor_cnd_data_file sysfs_usb vendor_pd_locater_dbg_prop vendor_mlid_exec mnt_vendor_file vendor_qce_device mnt_pass_through_file vendor_mlid vendor_bservice_prop vendor_sysfs_qvr_external_sensor vendor_sysfs_devicetree_soc vendor_wifi_version vendor_qti_exec vendor_hal_usb_qti_exec shortcut_manager_icons systemkeys_data_file traced_consumer_socket mac_perms_file fs_bpf_vendor vendor_reschedule_service_prop vold_prop mkfs_exec vendor_data_file system_security_cacerts_file vendor_qmipriod vendor_qvirtmgr_prop vendor_qwes_data_file vendor_cap_configstore_dbg_prop vendor_wcnss_service_exec wifi_data_file vendor_service_contexts_file system_server lmkd_exec sysfs_zram userdebug_or_eng_prop logd_exec proc_pagetypeinfo video_device vendor_hal_capabilityconfigstore_qti_default_exec virtual_face_hal_prop mediaextractor_exec misctrl_exec vendor_sysfs_gpu_max_clock sysfs_loop vendor_hal_display_color_default vendor_sysfs_data vendor_iop_prop property_info vendor_hal_gatekeeper_qti_exec vendor_qdsp_device log_tag_prop snapshotctl_exec vendor_persist_time_file lowpan_prop vendor_tee_listener_prop apex_ota_reserved_file vendor_cnd_prop log_prop vendor_sys_video_prop aac_drc_prop vendor_qdcmss_prop lpdumpd_exec telephony_status_prop vendor_netmgr_recovery_data_file linkerconfig_exec adb_data_file proc_kallsyms vendor_soc_name_prop zram_control_prop vendor_adsprpc_prop misc_user_data_file vendor_limits_block_device lpdumpd_prop vendor_exported_system_prop vendor_dataadpl_prop vendor_netmgrd_exec vendor_keylayout_file vendor_hal_soter_qti_exec vendor_persist_subsys_file vendor_sensing_vendor_data_file vendor_hal_qteeconnector_qti proc_kpageflags hidl_memory_hwservice vendor_cgroup_follow_prop mediaswcodec profman_dump_data_file wifi_hal_prop tombstoned_crash_socket loop_device perfetto_exec vold_config_prop proc_vmallocinfo persistent_properties_ready_prop vendor_sysfs_npu proc_keys timezone_metadata_prop property_socket vendor_audio_socket fs_bpf_netd_shared sysfs_extcon textclassifier_data_file vendor_sensors_exec vendor_ims_exec hal_drm_server debugfs_tracing_debug storaged_exec vendor_spunvm_file system_lmk_prop vendor_sysfs_devicetree_cpu vts_status_prop apex_info_file proc_max_map_count proc_filesystems usb_uvc_enabled_prop sysfs_uhid vendor_per_proxy vendor_qti_init_shell_exec aconfig_storage_flags_metadata_file proc_stat mnt_media_rw_file method_trace_data_file vendor_hal_esepowermanager_qti vendor_overlay_file smart_idle_maint_enabled_prop vendor_hal_sensorscalibrate_qti_default_exec vendor_app_file vendor_sysfs_mmc_host ota_data_file system_ndebug_socket vendor_sysfs_esoc vendor_persist_camera_file sysfs_wlan_fwpath vendor_dataqti_socket tcpdump_exec platform_app radio_control_prop vendor_dcvs_prop prng_seeder_exec recovery_config_prop vendor_ramdump_vendor_data_file adbroot_exec vendor_media_data_file vendor_wlc_public_prop vendor_hal_sensorscalibrate_qti_default proc_dirty vendor_qteeconnector_opti_prop vendor_per_proxy_exec vendor_ramdump_device system_user_mode_emulation_prop vendor_qspm_dbg_prop vendor_mm_osal_prop sysfs_hwrandom vendor_shsusrd_exec metadata_bootstat_file radio_core_data_file vendor_tombstone_data_file nfc_service vendor_disable_spu_prop vendor_ipa_dev debugfs_wifi_tracing snapuserd_prop migrate_legacy_obb_data_exec qemu_hw_prop selinuxfs radio misctrl_prop vendor_hal_gnss_qti_exec odsign_data_file vendor_sysfs_scsi_host vendor_feature_enabler_client_exec mediadrm_config_prop vendor_sysfs_battery_supply statsdw_socket vdc_exec surfaceflinger_display_prop vendor_apex_metadata_file proc_vmstat lower_kptr_restrict_prop vendor_adsprpcd_exec radio_data_file vendor_hal_drm_widevine_exec property_service_version_prop vendor_spss_utils_device vendor_tui_data_file persist_wm_debug_prop vendor_persist_secnvm_file proc_hostname vendor_dpmd_socket vendor_persist_display_file remote_prov_prop vendor_install_recovery_exec vendor_radio_vendor_data_file vendor_wifidisplayhalservice_qti vendor_persist_sensors_file vendor_mdm_helper locale_prop vendor_qvr_prop mnt_product_file lmkd vendor_qspa_prop oem_unlock_prop credstore_service vendor_dspservice_exec proc_uid_io_stats shell_test_data_file adsprpcd_file vendor_alarm_boot_prop wpa_socket tuner_config_prop vendor_dpmd_exec vendor_sysfs_usb_c net_464xlat_fromvendor_prop priv_app ota_build_prop logdw_socket task_profiles_api_file vendor_persist_iar_db_file vendor_userdir_file wifi_prop wallpaper_file vendor_display_notch_prop storaged system_audio_config_prop qemu_sf_lcd_density_prop system_unsolzygote_socket mock_ota_prop vendor_hal_tui_comm_qti vendor_mdm_helper_prop vendor_usb_prop vendor_esoc_device sysfs_bluetooth_writable vendor_persist_hvdcp_file vendor_hal_neuralnetworks_data_file vendor_sysfs_system_memory storagemanager_config_prop adbroot mediametrics_exec vendor_toolbox_exec system_data_file vehicle_hal_prop vendor_modem_diag_prop vendor_gpu_prop vendor_xrcb_prop recovery_data_file mmc_prop vendor_console_log_level_prop vendor_hal_imsrtp_exec vendor_time_daemon vendor_dpmd vold_metadata_file vendor_efs_boot_dev vendor_vppservice asec_apk_file shutdown_checkpoints_system_data_file vpn_data_file vendor_power_off_alarm_exec llkd_prop nfc_prop vendor_cnd_vendor_prop apex_module_data_file proc_pressure_io tun_device vendor_diag_device vendor_hal_capabilityconfigstore_qti_default system_jvmti_agent_prop proc_page_cluster zygote_config_prop retaildemo_prop adbd_exec vendor_security_patch_level_prop system_adbd_prop suspend_prop system_zoneinfo_file vendor_data_shsusr_prop vendor_opengles_prop vendor_qvr_external_sensor_device zero_device server_configurable_flags_data_file proc_watermark_scale_factor proc_pid_max hal_drm_service vendor_netmgrd verity_status_prop adb_keys_file recovery_update_prop userdata_block_device vendor_pddump_data_file adbroot_data_file sysfs_wakeup_reasons vendor_sysfs_ssr_toggle vendor_adpl_exec secure_element sysfs_power vendor_idc_file vendor_ssgtzd_socket vendor_sysfs_kgsl_proc wifi_log_prop drmserver_service traced_exec vendor_synx_device wm_trace_data_file vendor_file sysfs_thermal netutils_wrapper_exec proc_modules property_contexts_file hal_cas_server vendor_socket_hook_prop traced proc_security vendor_mwqem_prop vold_status_prop preloads_data_file apexd_config_prop apexd_select_prop vendor_hal_qseecom_default quick_start_prop rootdisk_sysdev fs_bpf_uprobestats sysfs_perdev_minors vndk_prop perfetto_configs_data_file vendor_fm_radio_app_prop vendor_gralloc_prop fs_bpf_net_shared proc_overcommit_memory vendor_dspservice vendor_persist_haptics_file simpleperf_app_runner_exec netd_exec tombstoned_exec vendor_soc_model_prop uhid_device proc_cpuinfo vold_post_fs_data_prop apex_virt_data_file sysfs_ion test_boot_reason_prop vendor_sysfs_kgsl_gpuclk vendor_ipa_vendor_data_file proc_locks ot_daemon_socket proc_pipe_conf system_bootstrap_lib_file virtualizationservice_prop vendor_thermal_data_file pan_result_prop storage_file sysfs_zram_uevent system_passwd_file vendor_wifi_prop vendor_gpt_block_device vendor_persist_wcnss_service_file permissive_mte_prop pm_archiving_enabled_prop proc_loadavg crash_dump userspace_reboot_metadata_file system_font_fallback_file systemsound_config_prop mediaserver_exec surfaceflinger_prop traced_producer_socket rollback_data_file anr_data_file watchdog_metadata_file vendor_ssr_device vendor_system_prop vendor_sysfs_process_reclaim proc_uid_cputime_removeuid vendor_spcom_device theme_prop rebootescrow_hal_prop pm_prop test_harness_prop restorecon_prop sdk_sandbox_system_data_file shell_prop vendor_location_socket fs_bpf_netd_readonly vold_exec vendor_hal_neuralnetworks_default_exec netd wificond_exec perf_drop_caches_prop vendor_mbn_data_file vold_prepare_subdirs_exec rtc_device vendor_mm_parser_prop sysfs_kernel_notes vendor_xbl_block_device mdnsd_exec apex_metadata_file user_profile_root_file vendor_camera_prop vendor_motor_prop netd_stable_secret_prop rootfs vendor_dbg_brkpoint_prop vendor_hal_qccvndhal_qti surfaceflinger_color_prop setupwizard_prop vendor_dpmtcm_socket vendor_hvdcp_opti_prop vendor_per_mgr_exec vendor_persist_rcs_prop vendor_thermal-engine_exec vendor_wlan_device apex_ready_prop pmsg_device powerctl_prop fs_bpf_tethering mirror_data_file vendor_qti adbd_socket null_device userspace_reboot_log_prop vendor_msm_irqbalanced vendor_hal_rcsservice_exec traced_probes xtra_control_prop unencrypted_data_file vendor_video_prop sysfs_leds fs_bpf_net_private vendor_shsusr_data_file vendor_init-qcom-sensors-sh_exec rild_exec sysfs_devices_block sdk_sandbox_data_file rss_hwm_reset_exec vendor_hal_keymaster_qti virtualizationservice_data_file vendor_qtidataservices_app sensors_device nnapi_ext_deny_product_prop apex_art_staging_data_file vendor_lm_data_file vendor_sysfs_kgsl_gpu_model vendor_sysfs_usb_supply profcollectd_node_id_prop vendor_sysfs_usbpd_device vendor_qvrd_prop mm_events_exec vendor_cdsprpcd_exec logcat_exec vendor_apex_file vendor_wigig_prop tombstone_config_prop system_data_root_file vendor_crash_cnt_prop snapuserd_exec ram_device staged_install_file vendor_camera_data_file vendor_data_qmipriod_prop sysfs_msm_boot profcollectd_exec apexd_prop vendor_ims safemode_prop apex_system_server_data_file vendor_ctl_qmuxd_prop system_seccomp_policy_file proc_interrupts net_data_file nfc vendor_ctl_rild_prop vendor_rfs_access logd_auditrate_prop update_engine_data_file vendor_mdm_helper_exec vendor_wcnss_service vendor_ssr_setup_exec libc_debug_prop sysfs_fs_f2fs vendor_ipacm_prop vendor_wigig_core_prop odsign_prop vendor_wifi_vendor_data_file vendor_boot_mode_prop debugfs_tracing_printk_formats persist_debug_prop time_prop vendor_netmgr_data_file packages_list_file vendor_latency_device vendor_qspm_prop vendor_qvr_persist_prop virtual_ab_prop update_engine_log_data_file vendor_mmi_prop vendor_sysfs_suspend recovery_block_device mdns_socket proc_uid_concurrent_policy_time proc_extra_free_kbytes zygote statsd socket_device traced_perf_exec remount_exec vendor_mhi_device vold_data_file wifi_config_prop vendor_persist_camera_prop vendor_sysfs_scsi_target vendor_sysfs_bond0 sdcardfs vendor_ssr_prop proc_swaps staging_data_file usbd_exec sqlite_log_prop surfaceflinger mnt_sdcard_file proc_random vendor_hal_dpmQmiMgr_exec vendor_qtelephony vendor_mi_thermald_exec use_memfd_prop logd_socket adbroot_service nfc_logs_data_file prng_seeder_socket overlayfs_file system_app_data_file debugfs_tracing properties_serial random_device traced_perf_enabled_prop sysfs_uprobe vendor_nfc_nq_prop vendor_pd_mapper vendor_sysfs_spmi_dev vfat adbd_prop vendor_sysfs_soc vendor_wfd_sys_prop surfaceflinger_exec tuner_server_ctl_prop vendor_atfwd_exec sepolicy_file vendor_bsg_device vendor_mediadrm_vendor_data_file vendor_nfc_vendor_data_file pstorefs resourcecache_data_file vendor_hal_file vendor_hal_soter_qti super_block_device vendor_mlid_socket vendor_sysfs_spdaemon vendor_ctl_netmgrd_prop ultrasound_device socket_hook_prop proc_uptime vendor_hal_drm_widevine vendor_sysfs_kgsl_max_gpuclk vendor_hal_gnss_qti vendor_ims_socket vendor_sysfs_slpi vendor_sysfs_fingerprint vendor_exported_odm_prop hal_drm_hwservice uprobestats_exec metadata_block_device vendor_public_vendor_default_prop perfetto_traces_data_file vendor_data_ko_prop soc_prop proc_drop_caches sysfs_fs_incfs_features sysfs_uio fs_bpf system_userdir_file vendor_cdsprpcd tombstone_data_file user_profile_data_file vendor_qmipriod_data_file ota_image_data_file perfetto_traces_bugreport_data_file proc_net_tcp_udp system_suspend virtual_fingerprint_hal_prop vendor_ims_prop vendor_hvdcp_exec tombstoned_java_trace_socket vendor_hal_neuralnetworks_default sdcardd_exec vendor_hal_display_color_default_exec lmkd_prop properties_device vendor_fingerprint_prop sendbug_config_prop vendor_ctl_port-bridge_prop llkd_exec next_boot_prop proc_buddyinfo proc_version vendor_modem_efs_partition_device odrefresh_exec vendor_sysfs_usb_controller logpersistd_logging_prop vendor_sysfs_kgsl_snapshot zygote_socket proc_sysrq vendor_ctl_vendor_hbtp_prop vendor_hal_imsrtp vendor_hal_dpmQmiMgr vendor_wigig_hostapd_socket vndservicemanager_exec apex_tethering_data_file lmkd_config_prop vendor_sensors_qti_exec magisk wpa_data_file mediametrics storage_config_prop mediacodec_exec sysfs_wake_lock vendor_persist_block_device vendor_sysfs_mhi vendor_qti_data_file system_file vendor_persist_dpm_prop net_radio_prop sysfs_wakeup proc_tty_drivers vendor_boringssl_self_test_exec media_data_file vendor_mpctl_prop vendor_xdsp_device vendor_radio_prop tombstoned_intercept_socket userdata_sysdev mediaprovider vendor_sysfs_graphics vendor_batterysecret_exec stats_config_data_file vendor_firmware_file prereboot_data_file su proc_cmdline shell_data_file usb_prop vendor_sensor_log_data_file nfc_device vendor_qvrd_persist_prop sysfs_dt_firmware_android uprobestats_configs_data_file runas_exec vendor_location_prop profman_exec vendor_msm_irqbalance_prop vendor_ctl_vendor_mmid_prop sysfs_suspend_stats vendor_fda_prop vendor_wifidisplayhalservice_qti_exec mtectrl_exec vendor_power_prop network_stack ota_prop odsign_exec proc_kmsg proc_pressure_cpu persist_sysui_builder_extras_prop vendor_mi_thermald tee_device system_trace_prop vendor_ipacm-diag_prop media_variant_prop sysfs_touchpanel ueventd system_group_file vendor_default_prop rollback_test_prop vendor_sysfs_spss vendor_shsusrd vendor_ctl_vendor_wigigsvc_prop stats_data_file trace_data_file vendor_pd_mapper_exec vendor_batterysecret vendor_secure_element_vendor_data_file misc_logd_file vendor_wifi_vendor_wpa_socket misc_block_device vendor_port-bridge_socket apexd_payload_metadata_prop aaudio_config_prop tee_exec proc_asound prng_seeder tombstoned rs_exec vendor_display_prop vendor_hal_qseecom_default_exec vendor_bt_device proc_watermark_boost_factor fs_bpf_loader tty_device system_suspend_exec vendor_sysfs_msm_perf uprobestats_start_with_config_prop vendor_xlat_prop vendor_audio_data_file system_boot_reason_prop linkerconfig_file ota_package_file vendor_sg_device vendor_thermal_normal_prop motor_device vendor_data_tzstorage_file lirc_device sgdisk_exec toolbox_exec usb_config_prop apex_data_file vendor_ctl_vendor_imsrcsservice_prop vendor_time_service_prop vendor_sysfs_diag vendor_location_data_file vendor_sysfs_kgsl vndservicemanager vendor_ramdump_prop traced_probes_exec cgroup_v2 proc_diskstats vendor_adsprpcd hal_cas_service oatdump_exec vendor_dpmd_data_file vendor_hal_gatekeeper_qti ot_daemon_exec vendor_port-bridge_exec vendor_mm_video_prop proc_perf rild vendor_init-qti-dcvs-sh_exec vendor_hal_esepowermanager_qti_exec odrefresh_data_file adb_service runtime_event_log_tags_file vendor_port-bridge vendor_sysfs_msm_subsys_restart aconfigd_exec vendor_rmt_storage_exec lineage_profile_service vendor_scroll_prop traced_lazy_prop mm_events_config_prop persist_sysui_ranking_update_prop vendor_sxr_prop vendor_hal_qteeconnector_qti_exec sysfs_net net_dns_prop vendor_pasr_prop apexd_exec init sysfs_android_usb statsd_exec vndbinder_device usbaccessory_device proc_uid_procstat_set vendor_wlc_prop system_event_log_tags_file uncrypt_exec vendor_persist_vpp_file adaptive_haptics_prop vendor_pps_socket media_userdir_file loop_control_device debugfs_tracing_instances vendor_sysfs_kgsl_shell vendor_hal_usb_qti proc_uid_time_in_state vendor_sysfs_ssr vendor_time_daemon_exec proc_meminfo vendor_ssd_block_device vendor_irsc_util_exec vendor_qmipriod_exec vendor_per_mgr_state_prop vendor_spcomlib_prop sysfs_devices_cs_etm power_debug_prop proc_iomem vendor_msm_irqbalanced_exec vendor_public_adsprpcd_file traced_enabled_prop vendor_dataqti_prop logdr_socket vendor_ssgtzd log_file_logger_prop mnt_expand_file vendor_cnd_exec perfetto_traces_profiling_data_file system_lib_file vendor_qsee_ipc_irq_spss_device proc_zoneinfo apex_rollback_data_file vendor_sysfs_kgsl_gpubusy property_data_file unlabeled vendor_rmnet_device task_profiles_file vendor_qrtr_exec apex_mnt_dir logd same_process_hal_file vendor_sensors_dbg_prop fusectlfs metadata_file vendor_sysfs_mem_offline radio_prop vendor_sysfs_public vendor_init lmkd_socket vendor_wfdservice_exec password_slot_metadata_file vendor_shell_exec nfc_data_file profcollectd_data_file vendor_wfd_vendor_debug_prop proc_net system_app media_config_prop proc_timer vendor_face3d_producer_prop vendor_wfd_sys_debug_prop vendor_sysfs_msm_power vendor_location_exec vendor_persist_rfs_shared_hlos_file vendor_persist_tcm_prop vendor_qcc_prop watchdogd_exec vendor_qrtr vendor_netmgrd_socket userspace_reboot_config_prop sysfs_usermodehelper vendor_display_vendor_data_file vendor_per_mgr last_boot_reason_prop apc_service userspace_reboot_exported_prop accessibility_trace_data_file vendor_sensors service_contexts_file ringtone_file vendor_sysfs_sku proc_misc sensors_config_prop vendor_sysfs_adsp_ssr snapshotctl_log_data_file vendor_port_bridge_data_file permissioncontroller_app wificond vendor_cnd sysfs_dm_verity vendor_sysfs_soc_sensitive network_watchlist_data_file mediaextractor mediatranscoding_exec vendor_core_ctl_prop vendor_ctl_qcrild_prop vendor_npu_device vendor_qmuxd_socket vendor_km_strongbox_version_prop vendor_fst_prop proc_abi vendor_at_device vendor_vpp_data_file system_prop vendor_soc_id_prop vendor_avtimer_device vendor_persist_rfs_file vendor_ramdump_microdump_modem_device proc_uid_cputime_showstat net_connectivity_prop vendor_ssgtzd_exec recovery_persist_exec storaged_data_file tee vendor_hal_qccvndhal_qti_exec sysfs_fs_ext4_features sysfs_iio shell_exec vendor_hal_tui_comm_qti_exec provisioned_prop } * *

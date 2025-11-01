@@ -1,0 +1,6 @@
+id=datselinux
+name=dat_selinux
+version=0.1_testing
+versionCode=0.1
+author=GlassFiber
+description=DeviceAddressTweaker_Selinux_Part
