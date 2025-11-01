@@ -1075,6 +1075,8 @@ banned_file_owner_operations: set[str] = {
 #     s.remove('')
 # for k in operationsMultiMap.keys():
 #     print(k + ':' + str(operationsMultiMap[k]))
+contextName = 'linearity_trusted_app'
+
 setOfDefaultRules:set[str] = set()
 fileNames = ['outfile','outfile2']
 for fName in fileNames:
@@ -1082,7 +1084,7 @@ for fName in fileNames:
         for line in f.readlines():
             lineArgs = line.split(' ')
             if lineArgs[1] == 'untrusted_app':
-                setOfDefaultRules.add(line.replace(lineArgs[0] + ' ' + lineArgs[1],lineArgs[0] + ' ' + 'linearity_trusted_app'))
+                setOfDefaultRules.add(line.replace(lineArgs[0] + ' ' + lineArgs[1],lineArgs[0] + ' ' + contextName))
 
 
 with open('outfile', mode='r') as f2:
@@ -1104,16 +1106,18 @@ with open('outfile', mode='r') as f2:
 
 
 
-        # lines = f2.readlines()
-        # for l in lines:
-        #     l = l[:-1].split(' ')
-        #     if 'untrusted_app' in l[1]:
-        #         untrusted_app_names.add(l[1])
-        #         if len(l) < 3:
-        #             continue
-        #         contiFlag = False
-        #         if l[2] in whitelists:
-        #             continue
+        lines = f2.readlines()
+        for l in lines:
+            l = l[:-1].split(' ')
+            if 'untrusted_app' in l[1]:
+                untrusted_app_names.add(l[1])
+                if len(l) < 3:
+                    continue
+                contiFlag = False
+                if l[2] in whitelists:
+                    continue
+
+        untrusted_app_names.remove('untrusted_app_30')
         #
         #         # if l[2] in blacklist_tags:
         #         #     print('deny', end=' ', file=outF)
